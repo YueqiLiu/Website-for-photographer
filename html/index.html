@@ -1,24 +1,134 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
 <body>
 
-<h1>My first PHP page</h1>
+<div class="jumbotron text-center">
+    <h1>South Photographers</h1>
+    <p>Professional family portrait services</p>
+  </div>
+  
+  <!-- Contacts table -->
+  <div class="container">
+    <h2>Our photographers:</h2>
+    
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-<?php
-$servername = "lamp.soton.ac.uk";
-$username = "MANG6180_student";
-$password = "tintin1830";
-$dbname = "mgmt_webapp_msc";
-
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-$conn->close();
-?>
+  <!-- Photo gallery -->
+  <div class="container">
+    <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Our work</h1>
+  
+    <hr class="mt-2 mb-5">
+  
+    <div class="row text-center text-lg-left">
+  
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://content.api.news/v3/images/bin/7f24e155a1dcb9aac9c16b5c2942d779?width=1024" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://www.jcpportraits.com/sites/jcpportraits.com/files/portrait/1812/_0025_P822_family_1117_003_E.jpg" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://external-preview.redd.it/3MI1BSk_HnoVRU46Mam-gWNVlrw8OzE_YbfxFuW0iTg.jpg?auto=webp&s=63de00af18730bdd5e5559c11ffac5a05de36669" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://i.pinimg.com/564x/5d/c1/12/5dc1122efcd0b859c5a5dd229384cc37.jpg" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://i.pinimg.com/564x/ba/14/9a/ba149a172c3e833477f9102c0d0445a9.jpg" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://i.pinimg.com/564x/13/fe/e6/13fee6d2d3741881b72fbdba85c21043.jpg" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://i.pinimg.com/564x/3f/ad/2a/3fad2a68b53c9a9a6de7ef09d9654ec8.jpg" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://i.pinimg.com/564x/26/8f/b2/268fb2f30efbb65091f3a6519520be28.jpg" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://i.pinimg.com/564x/16/32/b8/1632b8e8f1a0357d6e4c8b4dfdb76645.jpg" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://i.pinimg.com/564x/3c/09/b1/3c09b1aa487a8ad57c463268abda44b6.jpg" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://i.pinimg.com/564x/ba/4d/9c/ba4d9cfa1b7d19cb2c3017137a8a22ba.jpg" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://i.pinimg.com/564x/e1/26/0c/e1260c59f2b3986bce329662dd6b483a.jpg" alt="">
+            </a>
+      </div>
+    </div>
+  
+  </div>
 
 </body>
+<footer>
+  <div class="jumbotron text-lg-left", style="height: 5px;">
+    <p>email: south.photographers@gmail.com</p>
+    <p><i>*Note that this is a fictious website that was developed by a student as part of a programming assigment</i></p>
+  </div>
+</footer>
 </html>
